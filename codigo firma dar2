@@ -1,0 +1,35 @@
+<div style="background-color: white; padding: 10px; font-family: Arial, sans-serif;">
+  <table border="0" cellspacing="0" cellpadding="0" width="450" style="width: 450px; border-collapse: collapse;">
+    <tr>
+      <td width="150" valign="top" style="width: 150px; border-right: 2.25pt solid #2196F3; padding: 0 15px 0 0;">
+        <img src="https://raw.githubusercontent.com/carlosriosg/FirmasMail/main/firma_foto_charly.png" width="133" height="133" style="display: block; border: 0;">
+        <p style="margin: 20px 0 0 0; color: #2196F3; font-weight: bold; font-size: 14px;">
+          Carlos Ignacio Rios G<br>
+          <span style="color: black; font-weight: normal; font-size: 12px;">Director Creativo</span>
+        </p>
+      </td>
+
+      <td valign="top" style="padding-left: 20px;">
+        <p style="margin: 0 0 10px 0; font-size: 12px; color: black; line-height: 1.5;">
+          <strong>M</strong> +56 9 9843 3346<br>
+          <strong>E</strong> <a href="mailto:carlos@dar2.cl" style="color: blue; text-decoration: none;">carlos@dar2.cl</a>
+        </p>
+        <p style="margin: 0 0 10px 0; font-size: 12px; color: black; line-height: 1.5;">
+          <strong>Dar2 Servicios Audiovisuales</strong><br>
+          Av. Holanda 099 Of 603<br>
+          Providencia, Chile
+        </p>
+        <p style="margin: 0; font-size: 12px;">
+          <a href="http://www.dar2.cl/" style="color: #2196F3; font-weight: bold; text-decoration: none;">www.dar2.cl</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top: 20px;">
+        <a href="https://dar2.cl/" target="_blank">
+          <img src="https://raw.githubusercontent.com/carlosriosg/FirmasMail/main/firma_logo_dar2.png" width="169" height="50" alt="Banner Dar2" style="display: block; border: 0;">
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>

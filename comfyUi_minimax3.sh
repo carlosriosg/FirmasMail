@@ -25,11 +25,12 @@ if [ ! -d "ComfyUI-Easy-Use" ]; then
 fi
 cd ComfyUI-Easy-Use && pip install --no-cache-dir -r requirements.txt && cd ..
 
-# 4. Crear estructura de carpetas
+# 4. Crear estructura de carpetas (incluida la carpeta loras)
 mkdir -p /workspace/ComfyUI/models/checkpoints \
          /workspace/ComfyUI/models/vae \
          /workspace/ComfyUI/models/text_encoders \
-         /workspace/ComfyUI/models/diffusion_models
+         /workspace/ComfyUI/models/diffusion_models \
+         /workspace/ComfyUI/models/loras
 
 # 5. Descargar modelos a MÁXIMA VELOCIDAD con aria2c (16 hilos por archivo)
 echo "Iniciando descargas multihilo de alta velocidad..."
@@ -48,5 +49,8 @@ aria2c -x 16 -s 16 -k 1M -d /workspace/ComfyUI/models/text_encoders -o qwen3vl_3
 
 aria2c -x 16 -s 16 -k 1M -d /workspace/ComfyUI/models/diffusion_models -o minimax_h3_ref2va_pruned_int8_convrot.safetensors \
 "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors"
+
+aria2c -x 16 -s 16 -k 1M -d /workspace/ComfyUI/models/loras -o minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors \
+"https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/loras/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors"
 
 echo "¡Entorno instalado y listo para usar!"
